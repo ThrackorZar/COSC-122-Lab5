@@ -4,15 +4,61 @@
 <html lang="en">
 
 <head>
+    <!-- Head Section -->
     <meta charset="UTF-8">
-    <title>Tutorials</title>
+    <title>Tutorials - Adobe Software</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>This is the tutorials page.</p>
-    <a href="index.html">Back to Home</a>
+    <!-- Main Header -->
+    <h1>Adobe Software Tutorials</h1>
+
+    <!-- Navigation Link -->
+    <p><a href="index.html">Back to Home</a></p>
+
+    <!-- Tab System -->
+    <div class="tabs">
+        <button class="tab-link" onclick="openTab(event, 'Premiere')">Premiere Pro</button>
+        <button class="tab-link" onclick="openTab(event, 'AfterEffects')">After Effects</button>
+        <button class="tab-link" onclick="openTab(event, 'Photoshop')">Photoshop</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="Premiere" class="tab-content">
+        <h2>Premiere Pro Tutorial</h2>
+        <p>placeholder 1</p>
+    </div>
+
+    <div id="AfterEffects" class="tab-content" style="display:none;">
+        <h2>After Effects Tutorial</h2>
+        <p>placeholder 2</p>
+    </div>
+
+    <div id="Photoshop" class="tab-content" style="display:none;">
+        <h2>Photoshop Tutorial</h2>
+        <p>placeholder 3</p>
+    </div>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
 </html>
