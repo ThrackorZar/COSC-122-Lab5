@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Header stylings */
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+h3 {
+    color: #007BFF;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
