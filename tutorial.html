@@ -38,7 +38,7 @@
         <!-- Tab Content for Premiere Pro -->
         <div id="Premiere" class="tab-content active">
             <!-- Premiere Pro Image -->
-            <img src="images/premiere-pro.png" alt="Adobe Premiere Pro" class="logos">
+            <img src="premiere-pro.png" alt="Adobe Premiere Pro" class="logos">
 
             <!-- Premiere Pro Tutorial Content -->
             <h3>Getting Started with Premiere Pro</h3>
@@ -60,7 +60,7 @@
                 <li>Integration with other Adobe apps</li>
             </ul>
 
-            <!-- Steps to Create a New Project -->
+            <!-- New Project Tutorial -->
             <h4>Steps to Create a New Project:</h4>
             <ol>
                 <li>Open Premiere Pro and select <em>New Project</em>.</li>
@@ -102,7 +102,7 @@
         <!-- Tab Content for After Effects -->
         <div id="AfterEffects" class="tab-content">
             <!-- After Effects Image -->
-            <img src="images/after-effects.png" alt="Adobe After Effects" class="logos">
+            <img src="after-effects.png" alt="Adobe After Effects" class="logos">
 
             <!-- After Effects Tutorial Content -->
             <h3>Getting Started with After Effects</h3>
@@ -124,7 +124,7 @@
                 <li>Integration with Cinema 4D</li>
             </ul>
 
-            <!-- Steps to Create a Basic Animation -->
+            <!-- New Project Tutorial -->
             <h4>Steps to Create a Basic Animation:</h4>
             <ol>
                 <li>Open After Effects and create a new composition.</li>
@@ -166,7 +166,7 @@
         <!-- Tab Content for Photoshop -->
         <div id="Photoshop" class="tab-content">
             <!-- Photoshop Image -->
-            <img src="images/photoshop.png" alt="Adobe Photoshop" class="logos">
+            <img src="photoshop.png" alt="Adobe Photoshop" class="logos">
 
             <!-- Photoshop Tutorial Content -->
             <h3>Getting Started with Photoshop</h3>
@@ -189,7 +189,7 @@
                 <li>Extensive filter library</li>
             </ul>
 
-            <!-- Steps to Retouch a Photo -->
+            <!-- New Project Tutorial -->
             <h4>Steps to Retouch a Photo:</h4>
             <ol>
                 <li>Open your image in Photoshop.</li>
@@ -229,29 +229,37 @@
         </div>
     </div>
 
-    <!-- JavaScript for Tabs -->
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
+<!-- JavaScript for Tabs -->
+<script>
+    // Tab function
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
 
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active");
-            }
-
-            tablinks = document.getElementsByClassName("tab");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
+        // Find all current tutorial content 'pages' in tutorial file (not 100% needed since were not making more tabs but functional)
+        tabcontent = document.getElementsByClassName("tab-content");
+        // Remove active descriptor from all tabs content to hide contents
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementsByClassName('tab')[0].click();
-        });
-    </script>
+        // Find all current tabs in tutorial file (not 100% needed since were not making more tabs but functional)
+        tablinks = document.getElementsByClassName("tab");
+        // Remove active descriptor from all tabs before making selected tab active
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        // Make selected tabs content active
+        document.getElementById(tabName).classList.add("active");
+        // Highlight current active tab
+        evt.currentTarget.classList.add("active");
+    }
+
+    // Auto trigger tab 1 on load
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementsByClassName('tab')[0].click();
+    });
+</script>
 </body>
 
 </html>
