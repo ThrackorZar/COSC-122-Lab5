@@ -6,102 +6,227 @@
 <head>
     <!-- Head Section -->
     <meta charset="UTF-8">
-    <title>Tutorials - Adobe Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Adobe Software</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Main Header -->
-    <h1>Adobe Software Tutorials</h1>
+    <!-- Container Box -->
+    <div class="container">
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
 
-    <!-- Navigation Link -->
-    <p><a href="index.html">Back to Home</a></p>
+        <!-- Main Header -->
+        <h1>Adobe Software Tutorials</h1>
 
-    <!-- Tab System -->
-    <div class="tabs">
-        <button class="tab-link" onclick="openTab(event, 'Premiere')">Premiere Pro</button>
-        <button class="tab-link" onclick="openTab(event, 'AfterEffects')">After Effects</button>
-        <button class="tab-link" onclick="openTab(event, 'Photoshop')">Photoshop</button>
-    </div>
+        <!-- Sub Header -->
+        <h2>Jaden Edgar - 56817604</h2>
 
-    <!-- Tab Content -->
-    <!-- Premiere Pro Tab Content -->
-    <div id="Premiere" class="tab-content" style="display:block;">
-        <h2>Premiere Pro Tutorial</h2>
-        <p><strong>Adobe Premiere Pro</strong> is a professional video editing software application.</p>
-    
-        <!-- Image -->
-        <img src="images/premiere-pro.png" alt="Adobe Premiere Pro" width="600">
-    
-        <!-- Features List -->
-        <h3>Key Features:</h3>
-        <ul>
-            <li>Multi-track editing</li>
-            <li>Advanced color correction</li>
-            <li>Audio editing tools</li>
-        </ul>
-    
-        <!-- Steps -->
-        <h3>Getting Started:</h3>
-        <ol>
-            <li>Open Premiere Pro.</li>
-            <li>Create a new project.</li>
-            <li>Import media files.</li>
-            <li>Start editing your video.</li>
-        </ol>
-    </div>
+        <!-- Divider Line -->
+        <hr class="divider">
 
-    <!-- After Effects Tab Content -->
-    <div id="AfterEffects" class="tab-content">
-        <h2>After Effects Tutorial</h2>
-        <p><strong>Adobe After Effects</strong> is a digital visual effects, motion graphics, and compositing application.
-        </p>
+        <!-- Tab System -->
+        <div class="tabs">
+            <div class="tab active" onclick="openTab(event, 'Premiere')">Premiere Pro</div>
+            <div class="tab" onclick="openTab(event, 'AfterEffects')">After Effects</div>
+            <div class="tab" onclick="openTab(event, 'Photoshop')">Photoshop</div>
+        </div>
 
-        <!-- Image -->
-        <img src="images/after-effects.png" alt="Adobe After Effects" width="600">
+        <!-- Tab Content for Premiere Pro -->
+        <div id="Premiere" class="tab-content active">
+            <!-- Premiere Pro Image -->
+            <img src="images/premiere-pro.png" alt="Adobe Premiere Pro" class="logos">
 
-        <!-- Features List -->
-        <h3>Key Features:</h3>
-        <ul>
-            <li>Motion graphics creation</li>
-            <li>Visual effects</li>
-            <li>Animation tools</li>
-        </ul>
+            <!-- Premiere Pro Tutorial Content -->
+            <h3>Getting Started with Premiere Pro</h3>
+            <p><strong>Adobe Premiere Pro</strong> is a leading video editing software used by professionals worldwide.
+                It provides a range of tools for editing, color correction, and audio post-production.</p>
 
-        <!-- Steps -->
-        <h3>Getting Started:</h3>
-        <ol>
-            <li>Open After Effects.</li>
-            <li>Create a new composition.</li>
-            <li>Import assets.</li>
-            <li>Start creating animations.</li>
-        </ol>
-    </div>
+            <!-- External Links -->
+            <p>For more information, visit the <a href="https://www.adobe.com/products/premiere.html" target="_blank"
+                    rel="noopener noreferrer">Adobe Premiere Pro Official Page</a> or the <a
+                    href="https://helpx.adobe.com/support/premiere-pro.html" target="_blank"
+                    rel="noopener noreferrer">Adobe Premiere Pro Support</a>.</p>
 
-    <!-- Photoshop Tab Content -->
-    <div id="Photoshop" class="tab-content">
-        <h2>Photoshop Tutorial</h2>
-        <p><strong>Adobe Photoshop</strong> is a raster graphics editor developed for image editing and graphic design.</p>
+            <!-- Features List -->
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Multi-track editing</li>
+                <li>Advanced color grading tools</li>
+                <li>Extensive format support</li>
+                <li>Integration with other Adobe apps</li>
+            </ul>
 
-        <!-- Image -->
-        <img src="images/photoshop.png" alt="Adobe Photoshop" width="600">
+            <!-- Steps to Create a New Project -->
+            <h4>Steps to Create a New Project:</h4>
+            <ol>
+                <li>Open Premiere Pro and select <em>New Project</em>.</li>
+                <li>Name your project and choose a save location.</li>
+                <li>Set your desired settings and click <u>Create</u>.</li>
+                <li>Import your media files to start editing.</li>
+            </ol>
 
-        <!-- Features List -->
-        <h3>Key Features:</h3>
-        <ul>
-            <li>Photo editing</li>
-            <li>Graphic design</li>
-            <li>Digital art creation</li>
-        </ul>
+            <!-- Tutorial Table -->
+            <h4>Premiere Pro vs. Other Editing Software:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Primary Use</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Premiere Pro</td>
+                        <td>Video Editing</td>
+                        <td>Multi-track timeline</td>
+                    </tr>
+                    <tr>
+                        <td><em>Final Cut Pro</em></td>
+                        <td>Video Editing</td>
+                        <td>Magnetic timeline</td>
+                    </tr>
+                    <tr>
+                        <td><em>DaVinci Resolve</em></td>
+                        <td>Color Grading & Video Editing</td>
+                        <td>Advanced color correction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <!-- Steps -->
-        <h3>Getting Started:</h3>
-        <ol>
-            <li>Open Photoshop.</li>
-            <li>Create a new document.</li>
-            <li>Import or create images.</li>
-            <li>Edit and manipulate images.</li>
-        </ol>
+        <!-- Tab Content for After Effects -->
+        <div id="AfterEffects" class="tab-content">
+            <!-- After Effects Image -->
+            <img src="images/after-effects.png" alt="Adobe After Effects" class="logos">
+
+            <!-- After Effects Tutorial Content -->
+            <h3>Getting Started with After Effects</h3>
+            <p><strong>Adobe After Effects</strong> is a powerful tool for creating motion graphics and visual effects.
+                It enables artists to animate, alter, and composite media in 2D and 3D space.</p>
+
+            <!-- External Links -->
+            <p>For more information, visit the <a href="https://www.adobe.com/products/aftereffects.html"
+                    target="_blank" rel="noopener noreferrer">Adobe After Effects Official Page</a> or the <a
+                    href="https://helpx.adobe.com/support/after-effects.html" target="_blank"
+                    rel="noopener noreferrer">Adobe After Effects Support</a>.</p>
+
+            <!-- Features List -->
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Motion tracking</li>
+                <li>3D rendering</li>
+                <li>Particle systems</li>
+                <li>Integration with Cinema 4D</li>
+            </ul>
+
+            <!-- Steps to Create a Basic Animation -->
+            <h4>Steps to Create a Basic Animation:</h4>
+            <ol>
+                <li>Open After Effects and create a new composition.</li>
+                <li>Import your media assets.</li>
+                <li>Add layers and set keyframes for animation.</li>
+                <li>Apply effects and render your final output.</li>
+            </ol>
+
+            <!-- Tutorial Table -->
+            <h4>After Effects vs. Other Motion Graphics Software:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Primary Use</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>After Effects</td>
+                        <td>Motion Graphics & VFX</td>
+                        <td>Comprehensive effect library</td>
+                    </tr>
+                    <tr>
+                        <td><em>Blender</em></td>
+                        <td>3D Modeling & Animation</td>
+                        <td>Open-source and free</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinema 4D</em></td>
+                        <td>3D Motion Graphics</td>
+                        <td>User-friendly interface</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tab Content for Photoshop -->
+        <div id="Photoshop" class="tab-content">
+            <!-- Photoshop Image -->
+            <img src="images/photoshop.png" alt="Adobe Photoshop" class="logos">
+
+            <!-- Photoshop Tutorial Content -->
+            <h3>Getting Started with Photoshop</h3>
+            <p><strong>Adobe Photoshop</strong> is the industry-standard raster graphics editor used for image editing,
+                graphic design, and digital art creation. It provides powerful tools for manipulating images with
+                precision.</p>
+
+            <!-- External Links -->
+            <p>For more information, visit the <a href="https://www.adobe.com/products/photoshop.html" target="_blank"
+                    rel="noopener noreferrer">Adobe Photoshop Official Page</a> or the <a
+                    href="https://helpx.adobe.com/support/photoshop.html" target="_blank"
+                    rel="noopener noreferrer">Adobe Photoshop Support</a>.</p>
+
+            <!-- Features List -->
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Layer-based editing</li>
+                <li>Advanced selection tools</li>
+                <li>Content-aware fill</li>
+                <li>Extensive filter library</li>
+            </ul>
+
+            <!-- Steps to Retouch a Photo -->
+            <h4>Steps to Retouch a Photo:</h4>
+            <ol>
+                <li>Open your image in Photoshop.</li>
+                <li>Duplicate the background layer.</li>
+                <li>Use the Healing Brush Tool to remove blemishes.</li>
+                <li>Adjust brightness and contrast for final touches.</li>
+            </ol>
+
+            <!-- Tutorial Table -->
+            <h4>Photoshop vs. Other Image Editing Software:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Primary Use</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Photoshop</td>
+                        <td>Image Editing & Graphic Design</td>
+                        <td>Layer-based workflow</td>
+                    </tr>
+                    <tr>
+                        <td><em>GIMP</em></td>
+                        <td>Image Editing</td>
+                        <td>Open-source and free</td>
+                    </tr>
+                    <tr>
+                        <td><em>Affinity Photo</em></td>
+                        <td>Image Editing</td>
+                        <td>One-time purchase</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- JavaScript for Tabs -->
@@ -111,17 +236,21 @@
 
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
             }
 
-            tablinks = document.getElementsByClassName("tab-link");
+            tablinks = document.getElementsByClassName("tab");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                tablinks[i].classList.remove("active");
             }
 
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementsByClassName('tab')[0].click();
+        });
     </script>
 </body>
 
